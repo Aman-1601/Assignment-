@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Column Layout</title>
+    <style>
+        /* CSS to style the layout */
+        .container {
+            display: flex; /* Use flexbox for layout */
+        }
+
+        .column {
+            flex: 1; /* Equal width columns */
+            padding: 20px; /* Add padding for spacing */
+            border: 1px solid #ccc; /* Optional: Add border for visualization */
+        }
+
+        /* Optional: Adjust styles for smaller screens */
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column; /* Stack columns vertically on small screens */
+            }
+            .column {
+                width: 100%; /* Full width for columns on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <!-- Content for the first column -->
+            <h2>First Column</h2>
+            <p>This is the content of the first column.</p>
+        </div>
+        <div class="column">
+            <!-- Content for the second column -->
+            <h2>Second Column</h2>
+            <p>This is the content of the second column.</p>
+        </div>
+    </div>
+</body>
+</html>
